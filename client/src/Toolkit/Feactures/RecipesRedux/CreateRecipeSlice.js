@@ -18,7 +18,7 @@ export const createRecipe = createAsyncThunk(
 
   
 
-         const response = await axios.post("http://localhost:3000/api/recipePost", pd, {
+         const response = await axios.post("https://frontend-backend-d3ey.onrender.com/api/recipePost", pd, {
         headers: {
           "Content-Type": "multipart/form-data"
         },

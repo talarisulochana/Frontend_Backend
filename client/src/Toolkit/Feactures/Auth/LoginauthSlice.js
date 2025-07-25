@@ -8,7 +8,7 @@ const storedUser = JSON.parse(localStorage.getItem('user'));
 
 export const loginUser = createAsyncThunk('auth/loginUser', async ({ email, password }, rejectWithValue) => {
   try {
-    const res = await axios.get(`http://localhost:3000/api/userGet`);
+    const res = await axios.get(`https://frontend-backend-d3ey.onrender.com/api/userGet`);
     const user = res.data.find(user => user.email === email && user.password === password);
     if (!user) {
       return rejectWithValue("Invalid email or password");

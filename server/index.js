@@ -33,7 +33,7 @@ connectMongo();
 
 
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://frontend-backend-k9q4.vercel.app",
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));

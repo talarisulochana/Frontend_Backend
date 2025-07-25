@@ -38,6 +38,7 @@ app.use(cors({
   credentials: true
 }));
 
+
 //User routes
 app.use('/api', userGet)
 app.use('/api',userGetByid)
